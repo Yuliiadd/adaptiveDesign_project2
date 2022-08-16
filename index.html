@@ -16,19 +16,73 @@
 <!-- 1 section -->
 
 <div class="wrapper">
-     <div class="logo">
-       <svg  width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="#005BBB"/>
-        <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="#005BBB"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="#005BBB"/>
-        </svg> 
-    </div>
+  <div class="header_top">
+       <div class="logo">
+          <svg  width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="#005BBB"/>
+          <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="#005BBB"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="#005BBB"/>
+          </svg> 
+        </div>
 
-    <nav class="nav">
-        <a href="#" class="nav_item">gallery</a>
-        <a href="#" class="nav_item">history</a>
-        <a href="#" class="nav_item">contact us</a>
-    </nav> 
+      <nav class="nav">
+        <div class="burger">
+          <button class="burger_btn" > 
+              <svg class="burger_icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 8H48V13H0V8Z" fill="#005BBB"/>
+              <path d="M0 21H48V26H0V21Z" fill="#005BBB"/>
+              <path d="M48 34H0V39H48V34Z" fill="#005BBB"/>
+              </svg>            
+          </button>
+          <input type="checkbox" id="checkbox" class="checkbox">
+
+          <div class="burger_menu">
+            <div class="burger_section">
+              <div class="burger_header">
+                <svg class="white_logo" width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="white"/>
+                    <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="white"/>
+                </svg>
+                <svg class="close_btn" width="38" height="38" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9996 15.9646L3.79676 0.761719L0.26123 4.29725L15.4641 19.5001L0.261363 34.7029L3.7969 38.2384L18.9996 23.0357L34.2024 38.2384L37.7379 34.7028L22.5352 19.5001L37.738 4.29726L34.2025 0.761727L18.9996 15.9646Z" fill="white"/>
+                </svg>
+              </div>
+              <ul class="nav_burger">
+                  <li class="item_burger">
+                    <a href="#" class="link_burger">gallery</a>
+                  </li>
+        
+                  <li class="item_burger">
+                    <a href="#" class="link_burger">history</a>
+                  </li>
+        
+                  <li class="item_burger">
+                    <a href="#" class="link_burger">contact us</a>
+                  </li>
+                  
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#" class="link">gallery</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="link">history</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="link">contact us</a>
+          </li>
+          
+        </ul>
+      </nav> 
+  </div>
+  
 
     <div class="gallery">
         <div><img src="img/image1.png"></div>
@@ -39,9 +93,12 @@
         <div><img src="img/image3.png"></div>
     </div>
 
-    <p class="info">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
-    <p class="info">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
-    <p class="info">Glory to Ukraine!</p>
+    <div class="paragraphs">
+      <p class="info">We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+      <p class="info">Please take a look at our history and contact us if you are intrested. We would be really glad to join the help to Ukraine as we can. </p>
+      <p class="info">Glory to Ukraine!</p>
+    </div>
+    
 </div>
 
 <!-- 2 section -->
@@ -54,12 +111,17 @@
     </div>
 </div>
 
+<!-- 3 section -->
+
 <div class="wrapper section">
+  <footer class="footer">
     <h2 class="title">CONTACT US</h2>
     <div class="input_area">
         <input class="input" type="text" name="input" placeholder="type your message here">
         <button class="btn">SEND</button>
     </div>
+  </footer>
+    
 </div>
 
 

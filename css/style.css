@@ -3,10 +3,6 @@
 *:after {
   box-sizing: border-box;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,8 +67,10 @@ h1 {
 
 /*мої стилі*/
 
+/* 1 секція */
+
 .wrapper {
-  width: 1312px;
+  max-width: 1312px;
   margin: 0 auto;
 }
 
@@ -87,17 +85,102 @@ fill: #FFD500;
 cursor: pointer;
 }
 
-.nav {
+.nav_list {
   margin-bottom: 80px;
   display: flex;
   justify-content: center;
 }
 
+/* бургер меню */
+
+.burger_btn {
+  border:0;
+  background-color: white;
+}
+
+.checkbox {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  z-index: 3;
+  right: 63px;
+  opacity: 0; 
+}
+.checkbox:checked + .burger_menu{
+  display:block;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.burger_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #005BBB;
+  width: 100%;
+  min-height: 516px;
+  z-index: 2;
+  padding: 48px 65px;
+}
+
+.burger_header {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.nav_burger {
+  display: block;
+  margin-top: 120px;
+}
+
+.link_burger {
+ color: white;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 20px;
+ text-decoration: none;
+ transition: 0.5s;
+}
+
+.item_burger {
+margin-bottom: 48px;
+}
+
+
+
+.close_btn {
+  cursor: pointer;
+}
+
+.gallery {
+  max-width: 1312px;
+}
+
+.gallery img {
+  width: 400px;
+  margin: 0 auto 40px auto;
+  height: 200px;
+  border-left: 10px solid transparent;
+  background: linear-gradient(to top, #FFD500 0% 50%, #005BBB 50% 100%);
+}
+
+
+/* navigation */
+
 .nav_item {
+  margin: 0 40px;
+}
+
+.link {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   text-decoration: none;
-  margin: 0 40px;
   color: rgba(0, 91, 187, 1);
   transition: 0.5s;
 }
@@ -107,19 +190,9 @@ cursor: pointer;
 
 }
 
-.gallery {
-  width: 1312px;
-}
-
-.gallery img {
-  width: 400px;
-  height: 200px;
-  margin: 0 auto 40px auto;
-  border-left: 10px solid transparent;
-  background: linear-gradient(to top, #FFD500 0% 50%, #005BBB 50% 100%);
-}
 
 
+/* slider */
 
 .slick-dots {
   display: flex;
@@ -148,6 +221,9 @@ cursor: pointer;
   margin-bottom: 80px;
 }
 
+.paragraphs {
+  padding: 0 60px;
+}
 
 .info {
   font-family: 'Montserrat', sans-serif;
@@ -155,8 +231,10 @@ cursor: pointer;
   color: rgba(0, 91, 187, 1);
   line-height: 39px;
   margin: 0 auto 17px auto;
-  width: 1024px;
+  max-width: 1024px;
 }
+
+/* 2 секція */
 
 .title {
   font-family: 'Montserrat', sans-serif;
@@ -164,7 +242,7 @@ cursor: pointer;
   font-size: 40px;
   color: rgba(0, 91, 187, 1);
   border-bottom: solid 1px rgba(0, 91, 187, 1);
-  width: 500px;
+  max-width: 500px;
   height: 80px;
   margin: 0 auto;
   display: flex;
@@ -176,17 +254,17 @@ cursor: pointer;
   border-top: solid 1px rgba(0, 91, 187, 1);
   margin: 80px auto 0 auto;
   max-width: 1024px;
-  }
+}
 
 .stories {
   margin: 40px 0 80px 0;
   display: flex;
   justify-content: space-between;
+  padding: 0 60px;
 }
 
 .stories_item {
   width: 497px;
-  height: 394px;
   background-color: rgba(0, 91, 187, 1);
   border-left: solid 10px rgba(255, 213, 0, 1);
   display: table;
@@ -207,6 +285,10 @@ cursor: pointer;
   color: rgba(255, 255, 255, 1);
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
+}
+
+.footer {
+  padding: 0 60px;
 }
 
 .input_area {
@@ -257,5 +339,68 @@ cursor: pointer;
 .btn:hover {
   box-shadow: 0px 0px 15px #ede1a1;
   background-color: #FFD500;
+
+}
+
+/* tablet */
+
+@media only screen
+
+and (min-width: 768px)
+and (max-width: 1199px) {
+
+  .info {
+ font-size: 24px;
+}
+
+.stories {
+  display: block;
+}
+
+.stories_item {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+.nav_list {
+  display: none;;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 48px 60px 80px;
+  padding-top: 48px;
+}
+.logo {
+  margin:0;
+  padding:0;
+}
+
+.burger {
+  display: block;
+}
+
+.gallery img {
+  width: 432px;
+  margin: 0 auto 40px auto;
+
+}
+
+.title {
+  font-size: 30px;
+
+}
+ .input_area {
+  margin-bottom: 119px;
+ }
+
+/* mobile */
+
+@media only screen
+
+and (min-width: 320px)
+and (max-width: 767px) {
 
 }
