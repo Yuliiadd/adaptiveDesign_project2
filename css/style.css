@@ -75,19 +75,19 @@ h1 {
 }
 
 .logo {
-padding: 80px 0;
-width: 70px;
-margin: 0 auto;
-transition: 0.5s;
+  width: 70px;
+  margin: 0 auto;
+  transition: 0.5s;
+  padding: 80px 0;
 }
 
 .logo svg * {
   transition: 0.5s;
-  }
+}
 
 .logo:hover svg * {
-fill: #FFD500;
-cursor: pointer;
+  fill: #FFD500;
+  cursor: pointer;
 
 }
 
@@ -96,6 +96,8 @@ cursor: pointer;
   display: flex;
   justify-content: center;
 }
+
+
 
 /* бургер меню */
 
@@ -156,12 +158,14 @@ cursor: pointer;
 }
 
 .item_burger {
-margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .close_btn {
   cursor: pointer;
 }
+
+
 
 /* Gallery */
 
@@ -176,6 +180,7 @@ margin-bottom: 48px;
   border-left: 10px solid transparent;
   background: linear-gradient(to top, #FFD500 0% 50%, #005BBB 50% 100%);
 }
+
 
 
 /* navigation */
@@ -195,6 +200,8 @@ margin-bottom: 48px;
 .nav_item:hover {
   letter-spacing: 1.05rem;
 }
+
+
 
 /* slider */
 
@@ -237,6 +244,8 @@ margin-bottom: 48px;
   max-width: 1024px;
   line-height: 140%;
 }
+
+
 
 /* 2 section */
 
@@ -294,6 +303,8 @@ margin-bottom: 48px;
   font-size: 48px;
 }
 
+
+
 /* 3 section  */
 
 .input_area {
@@ -348,6 +359,8 @@ margin-bottom: 48px;
 
 }
 
+
+
 /* tablet */
 
 @media only screen
@@ -355,8 +368,8 @@ margin-bottom: 48px;
 and (min-width: 768px)
 and (max-width: 1199px) {
 
-  .info {
- font-size: 24px;
+.info {
+  font-size: 24px;
 }
 
 .stories {
@@ -392,21 +405,23 @@ and (max-width: 1199px) {
 .gallery img {
   width: 432px;
   margin: 0 auto 40px auto;
-
 }
 
 .title {
   font-size: 30px;
-
 }
- .input_area {
+
+.input_area {
   margin-bottom: 119px;
 }
+
 .footer {
   padding: 0 60px;
 }
-
 }
+
+
+
 /* mobile */
 
 @media only screen
@@ -414,115 +429,113 @@ and (max-width: 1199px) {
 and (min-width: 320px)
 and (max-width: 767px) {
 
-  .logo,
-  .nav_list {
-    display:none;
-  }
+.logo,
+.nav_list {
+  display:none;
+}
 
-  .stories {
-    display: block;
-    padding: 0 20px;
-  }
+.stories {
+  display: block;
+  padding: 0 20px;
+}
 
-  .stories_item {
-    width: 100%;
-    padding: 30px 30px 30px 20px;
-    margin: 0;
-    margin-top: 28px;
-  }
+.stories_item {
+  width: 100%;
+  padding: 30px 30px 30px 20px;
+  margin: 0;
+  margin-top: 28px;
+}
 
-  .stories_text {
-    font-size: 16px;
-  }
-  
-
-  .gallery img {
-    min-width: 375px;
-    margin: 0 auto 40px auto;
-  
-  }
-
-  .burger {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    right: 20px;
-    top: 20px;
-  }
-
-  .burger_icon path {
-    fill: rgb(255, 255, 255);
-    border: 1px solid;
-  }
-
- .checkbox {
-   background-color:black;
-   top: 0px;
-   right: 3px;
- }
-
- .info {
+.stories_text {
   font-size: 16px;
- }
+}
+  
 
- .title {
+.gallery img {
+  min-width: 375px;
+  margin: 0 auto 40px auto;
+
+}
+
+.burger {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 20px;
+}
+
+.burger_icon path {
+  fill: rgb(255, 255, 255);
+  border: 1px solid;
+}
+
+.checkbox {
+  background-color:black;
+  top: 0px;
+  right: 3px;
+}
+
+.info {
+  font-size: 16px;
+}
+
+.title {
   font-size: 20px;
   height: 56px;
 }
 
-  .paragraphs {
-    padding: 0 20px;
-  }
+.paragraphs {
+  padding: 0 20px;
+}
 
-  .year {
-    display: block;
-    font-size: 24px;
-    line-height: 29px;
-  }
+.year {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+}
 
-  .section {
-    margin: 56px auto 0 auto;
-  }
+.section {
+  margin: 56px auto 0 auto;
+}
 
-  .footer {
-    padding: 0 20px;
-  }
+.footer {
+  padding: 0 20px;
+}
 
-  .input_area{
-    position: relative;
-    display:flex;
-    justify-content: center;
-    min-height: 150px;
-  }
+.input_area{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  min-height: 150px;
+}
 
-  .input {
-    margin: 0;
-  }
+.input {
+  margin: 0;
+}
 
-  .btn {
+.btn {
   position: absolute;
   top: 169px;
   width: 100%;
   margin:0;
-  }
+}
 
-  .burger_menu {
-   min-width: 100%;
-   height: 100%;
-  }
+.burger_menu {
+  min-width: 100%;
+  height: 100%;
+}
 
-  .burger_section {
-    padding: 20px;
-    top: 0;
-    position: fixed;
-    height: 100%;
+.burger_section {
+  padding: 20px;
+  top: 0;
+  position: fixed;
+  height: 100%;
 
-  }
+}
 
-  .white_logo {
-    width: 54px;
-    height: 47px;
-  }
-
-
+.white_logo {
+  width: 54px;
+  height: 47px;
+}
 }
