@@ -103,8 +103,7 @@ h1 {
 
 .burger_btn {
   border:0;
-  background-color:  #c7d9e4;
-  border-radius: 10%;
+  background-color:  transparent;
 }
 
 .checkbox {
@@ -463,6 +462,11 @@ and (max-width: 767px) {
   z-index: 1;
   right: 20px;
   top: 20px;
+}
+
+.burger_btn {
+  background-color:  #c7d9e4;
+  border-radius: 10%;
 }
 
 .burger_icon path {
